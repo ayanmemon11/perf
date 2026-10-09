@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student &amp; Certificate Verification | Perfect Computer Education</title>
+  <meta name="description" content="Verify student certificate of completion issued by Perfect Computer Education. Fast, secure, and authentic student certificate verification portal." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <style>
+    .verify-hero {
+      background: var(--grad-hero-bg);
+      padding: 70px 0 50px 0;
+      text-align: center;
+    }
+    .verify-box {
+      background: #FFFFFF;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-lg);
+      max-width: 680px;
+      margin: -40px auto 70px auto;
+      padding: 40px 36px;
+      position: relative;
+      z-index: 10;
+    }
+    .verify-input-group {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .verify-input {
+      flex: 1;
+      padding: 14px 20px;
+      font-size: 1.05rem;
+      border: 2px solid var(--border-light);
+      border-radius: var(--radius-md);
+      background: #F8FAFC;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .verify-input:focus {
+      background: #FFFFFF;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+    }
+    .result-card {
+      margin-top: 32px;
+      padding: 28px;
+      border-radius: var(--radius-lg);
+      background: #F8FAFC;
+      border: 1.5px solid var(--border-light);
+      display: none;
+      text-align: left;
+    }
+    .result-card.success {
+      border-color: var(--accent-emerald);
+      background: #F0FDF4;
+    }
+    .result-card.not-found {
+      border-color: var(--accent-rose);
+      background: #FEF2F2;
+    }
+    .cert-status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .cert-status-badge.success {
+      background: #DCFCE7;
+      color: #15803D;
+      border: 1px solid #86EFAC;
+    }
+    .cert-status-badge.not-found {
+      background: #FEE2E2;
+      color: #B91C1C;
+      border: 1px solid #FCA5A5;
+    }
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 14px;
+    }
+    .cert-field-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-light);
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .cert-field-val {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .privacy-notice {
+      margin-top: 24px;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <aside class="top-bar" aria-label="Institute Contact Quick Info">
+    <div class="container top-bar-inner">
+      <div class="top-bar-info">
+        <a href="tel:+919876543210" class="top-bar-item" data-config="phone-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span data-config="phone">+91 98765 43210</span>
+        </a>
+        <div class="top-bar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Mon - Sat: 8:00 AM – 8:00 PM</span>
+        </div>
+      </div>
+      <div class="top-bar-socials">
+        <a href="admin.html" class="top-bar-item" style="color: #94A3B8; font-size: 0.8rem;" title="Institute Staff Login">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>Admin Portal</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+          <img src="images/logo.svg" alt="Perfect Computer Education" class="brand-logo-img" width="220" height="48" />
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li><a href="index.html#courses" class="nav-link">Courses</a></li>
+          <li><a href="index.html#why-us" class="nav-link">Why Choose Us</a></li>
+          <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          <li><a href="verify.html" class="nav-link active">Student / Certificate Verification</a></li>
+        </ul>
+        <div class="nav-cta-group">
+          <a href="index.html#contact" class="btn btn-primary btn-sm">Admission Enquiry</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" data-config="whatsapp-link">WhatsApp Us</a>
+          <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="verify-hero">
+      <div class="container">
+        <span class="section-badge">Official Portal</span>
+        <h1 class="section-title">Certificate &amp; Student <span class="text-gradient">Verification</span></h1>
+        <p class="section-subtitle" style="max-width: 580px; margin: 0 auto;">
+          Enter the official Certificate Number issued by Perfect Computer Education to verify authenticity.
+        </p>
+      </div>
+    </section>
+
+    <!-- VERIFICATION CARD -->
+    <section class="container">
+      <div class="verify-box">
+        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 6px; color: var(--text-main);">
+          Enter Certificate Number
+        </h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">
+          Example: <code>PCE-2026-101</code> (Printed at the bottom of your certificate)
+        </p>
+
+        <form id="verify-form">
+          <div class="verify-input-group">
+            <input type="text" id="cert-input" class="verify-input" placeholder="e.g. PCE-2026-101" required autocomplete="off" />
+            <button type="submit" id="verify-submit-btn" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              Verify Now
+            </button>
+          </div>
+        </form>
+
+        <!-- Result Box -->
+        <div id="verify-result" class="result-card"></div>
+
+        <div class="privacy-notice">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>Privacy Protected: Private student contact and financial details are never exposed publicly.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>&copy; 2026 Perfect Computer Education. All Rights Reserved.</div>
+        <div>Tagline: <span style="color: #38BDF8;">“Learn Today • Grow Tomorrow”</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" data-config="whatsapp-link" aria-label="Chat on WhatsApp">
+    <span class="whatsapp-pulse"></span>
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/verify.js"></script>
+</body>
+</html>

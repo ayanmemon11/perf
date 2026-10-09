@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate of Completion | Perfect Computer Education</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: #475569;
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .cert-frame {
+      width: 900px;
+      height: 620px;
+      background: #FFFFFF;
+      padding: 24px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+      position: relative;
+      box-sizing: border-box;
+    }
+    .cert-inner-border {
+      border: 4px double #D97706;
+      height: 100%;
+      padding: 28px 40px;
+      box-sizing: border-box;
+      position: relative;
+      text-align: center;
+      background: radial-gradient(circle at center, #FFFFFF 60%, #FEFCE8 100%);
+    }
+    .cert-corner {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: 3px solid #D97706;
+    }
+    .c-tl { top: 8px; left: 8px; border-right: none; border-bottom: none; }
+    .c-tr { top: 8px; right: 8px; border-left: none; border-bottom: none; }
+    .c-bl { bottom: 8px; left: 8px; border-right: none; border-top: none; }
+    .c-br { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+
+    .cert-brand-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: #0F172A;
+      letter-spacing: 2px;
+      margin-bottom: 2px;
+    }
+    .cert-brand-sub {
+      font-size: 0.85rem;
+      color: #D97706;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+    .cert-main-head {
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #1E3A8A;
+      letter-spacing: 1.5px;
+      border-top: 1px solid #E2E8F0;
+      border-bottom: 1px solid #E2E8F0;
+      padding: 6px 0;
+      margin-bottom: 18px;
+    }
+    .cert-present-text {
+      font-size: 1rem;
+      color: #64748B;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+    .cert-student-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #0F172A;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #2563EB;
+      display: inline-block;
+      padding: 0 20px 4px 20px;
+    }
+    .cert-for-text {
+      font-size: 0.95rem;
+      color: #475569;
+      margin-bottom: 8px;
+    }
+    .cert-course-name {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #2563EB;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+    .cert-footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      position: absolute;
+      bottom: 24px;
+      left: 40px;
+      right: 40px;
+    }
+    .cert-meta-block {
+      text-align: left;
+      font-size: 0.82rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+    .cert-meta-block strong {
+      color: #0F172A;
+    }
+    .cert-seal {
+      width: 80px;
+      height: 80px;
+    }
+    .cert-sig-block {
+      text-align: center;
+    }
+    .cert-sig-line {
+      border-top: 1.5px solid #0F172A;
+      width: 180px;
+      margin: 0 auto;
+      padding-top: 4px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #0F172A;
+    }
+    .no-print {
+      margin-top: 24px;
+    }
+    .btn-print {
+      background: #2563EB;
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    }
+    @media print {
+      body { background: #FFFFFF; padding: 0; }
+      .cert-frame { box-shadow: none; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cert-frame">
+    <div class="cert-inner-border">
+      <div class="cert-corner c-tl"></div>
+      <div class="cert-corner c-tr"></div>
+      <div class="cert-corner c-bl"></div>
+      <div class="cert-corner c-br"></div>
+
+      <div class="cert-brand-title">PERFECT COMPUTER EDUCATION</div>
+      <div class="cert-brand-sub">Learn Today • Grow Tomorrow</div>
+
+      <div class="cert-main-head">CERTIFICATE OF COMPLETION</div>
+
+      <div class="cert-present-text">This certificate is proudly presented to</div>
+
+      <div class="cert-student-name" id="c-student-name">PRIYA PATEL</div>
+
+      <div class="cert-for-text">for successfully completing the comprehensive practical training course in</div>
+
+      <div class="cert-course-name" id="c-course-name">FULL ACCOUNTING COURSE</div>
+
+      <div class="cert-footer-grid">
+        <div class="cert-meta-block">
+          <div>Certificate No: <strong id="c-cert-no" style="font-family: monospace;">PCE-2026-101</strong></div>
+          <div>Completion Date: <strong id="c-comp-date">2026-09-15</strong></div>
+          <div>Issue Date: <strong id="c-issue-date">2026-09-20</strong></div>
+        </div>
+
+        <img src="images/cert-badge.svg" alt="Verified Seal" class="cert-seal" />
+
+        <div class="cert-sig-block">
+          <div style="font-family: 'Great Vibes', cursive; font-size: 1.6rem; color: #1E3A8A; margin-bottom: 2px;">Director</div>
+          <div class="cert-sig-line" id="c-auth-person">Authorized Signature</div>
+          <div style="font-size: 0.75rem; color: #64748B;">Perfect Computer Education</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="no-print">
+    <button type="button" class="btn-print" onclick="window.print()">Print Certificate / Download PDF</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const certNo = urlParams.get('certNo');
+
+      if (!certNo) return;
+
+      try {
+        const res = await fetch('/data/database.json');
+        const db = await res.json();
+        const c = (db.certificates || []).find(cert => cert.certificateNo.toUpperCase() === certNo.toUpperCase());
+
+        if (c) {
+          document.getElementById('c-student-name').textContent = c.studentName;
+          document.getElementById('c-course-name').textContent = c.course;
+          document.getElementById('c-cert-no').textContent = c.certificateNo;
+          document.getElementById('c-comp-date').textContent = c.completionDate || '2026-09-15';
+          document.getElementById('c-issue-date').textContent = c.issueDate || '2026-09-20';
+          if (c.authorizedSignatory) {
+            document.getElementById('c-auth-person').textContent = c.authorizedSignatory;
+          }
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  </script>
+</body>
+</html>

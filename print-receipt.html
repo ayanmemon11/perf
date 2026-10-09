@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fee Payment Receipt | Perfect Computer Education</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #F1F5F9;
+      color: #0F172A;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .receipt-container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border: 2px solid #0F172A;
+      border-radius: 12px;
+      padding: 36px 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .receipt-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #2563EB;
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+    .inst-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #0F172A;
+      line-height: 1.1;
+    }
+    .inst-sub {
+      font-size: 0.82rem;
+      color: #64748B;
+      margin-top: 4px;
+    }
+    .receipt-badge {
+      background: #2563EB;
+      color: #FFFFFF;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      font-size: 0.92rem;
+    }
+    .receipt-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .field-lbl {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #64748B;
+      margin-bottom: 2px;
+    }
+    .field-val {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0F172A;
+    }
+    .amount-box {
+      background: #EFF6FF;
+      border: 2px dashed #2563EB;
+      border-radius: 8px;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .amount-big {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #1D4ED8;
+    }
+    .sig-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 50px;
+      padding-top: 20px;
+    }
+    .sig-line {
+      border-top: 1.5px solid #0F172A;
+      width: 200px;
+      text-align: center;
+      padding-top: 6px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .no-print {
+      text-align: center;
+      margin-top: 24px;
+    }
+    .btn-print {
+      background: #2563EB;
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    @media print {
+      body { background: #FFFFFF; padding: 0; }
+      .receipt-container { box-shadow: none; border: 1px solid #000; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="receipt-container">
+    <div class="receipt-header">
+      <div>
+        <div class="inst-title" id="r-inst-name">PERFECT COMPUTER EDUCATION</div>
+        <div class="inst-sub">“Learn Today • Grow Tomorrow” | Official Student Fee Receipt</div>
+      </div>
+      <div class="receipt-badge">FEE RECEIPT</div>
+    </div>
+
+    <div class="meta-row">
+      <div>Receipt No: <strong id="r-receipt-no" style="color: #2563EB; font-family: monospace; font-size: 1.05rem;">RCP-2026-1001</strong></div>
+      <div>Date: <strong id="r-date">2026-08-31</strong></div>
+    </div>
+
+    <div class="receipt-grid">
+      <div>
+        <div class="field-lbl">Student Name</div>
+        <div class="field-val" id="r-student-name">-</div>
+      </div>
+      <div>
+        <div class="field-lbl">Student ID</div>
+        <div class="field-val" id="r-student-id">-</div>
+      </div>
+      <div>
+        <div class="field-lbl">Enrolled Course</div>
+        <div class="field-val" id="r-course">-</div>
+      </div>
+      <div>
+        <div class="field-lbl">Payment Mode</div>
+        <div class="field-val" id="r-method">Cash / UPI</div>
+      </div>
+    </div>
+
+    <div class="amount-box">
+      <div>
+        <div style="font-size: 0.85rem; font-weight: 700; color: #1D4ED8; text-transform: uppercase;">Amount Paid</div>
+        <div style="font-size: 0.85rem; color: #64748B;" id="r-notes">Fee installment</div>
+      </div>
+      <div class="amount-big" id="r-amount">₹0</div>
+    </div>
+
+    <div style="font-size: 0.82rem; color: #64748B; line-height: 1.5;">
+      * Computer generated official fee receipt from Perfect Computer Education.<br />
+      * Fees once paid are non-refundable and non-transferable.
+    </div>
+
+    <div class="sig-row">
+      <div class="sig-line">Student Signature</div>
+      <div class="sig-line">Authorized Signatory</div>
+    </div>
+  </div>
+
+  <div class="no-print">
+    <button type="button" class="btn-print" onclick="window.print()">Print / Save PDF</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const receiptNo = urlParams.get('receiptNo');
+
+      if (!receiptNo) return;
+
+      try {
+        // Fetch database data
+        const res = await fetch('/data/database.json');
+        const db = await res.json();
+        const p = (db.payments || []).find(pay => pay.receiptNo === receiptNo);
+
+        if (p) {
+          document.getElementById('r-receipt-no').textContent = p.receiptNo;
+          document.getElementById('r-date').textContent = p.paymentDate;
+          document.getElementById('r-student-name').textContent = p.studentName;
+          document.getElementById('r-student-id').textContent = p.studentId;
+          document.getElementById('r-course').textContent = p.course;
+          document.getElementById('r-method').textContent = p.method || 'Cash / UPI';
+          document.getElementById('r-amount').textContent = `₹${(p.amount || 0).toLocaleString()}`;
+          document.getElementById('r-notes').textContent = p.notes || 'Course fee payment';
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  </script>
+</body>
+</html>

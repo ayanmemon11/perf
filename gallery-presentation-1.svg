@@ -1,0 +1,14 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#18181B"/>
+  <rect x="90" y="40" width="420" height="230" rx="8" fill="#FAFAFA" stroke="#71717A" stroke-width="3"/>
+  <rect x="110" y="60" width="380" height="190" rx="4" fill="#09090B"/>
+  <text x="300" y="95" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="15" fill="#38BDF8" text-anchor="middle">STUDENT PROJECT SHOWCASE</text>
+  <rect x="140" y="120" width="140" height="100" rx="6" fill="#27272A"/>
+  <text x="210" y="150" font-family="sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">Live Website Demo</text>
+  <rect x="310" y="120" width="150" height="100" rx="6" fill="#27272A"/>
+  <text x="385" y="150" font-family="sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">MIS Sales Dashboard</text>
+  <rect x="0" y="310" width="600" height="90" fill="#27272A"/>
+  <circle cx="180" cy="320" r="22" fill="#52525B"/>
+  <circle cx="300" cy="320" r="22" fill="#71717A"/>
+  <circle cx="420" cy="320" r="22" fill="#52525B"/>
+</svg>

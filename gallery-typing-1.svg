@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#0C4A6E"/>
+  <g transform="translate(150, 50)">
+    <rect width="300" height="280" rx="16" fill="#082F49" stroke="#38BDF8" stroke-width="2"/>
+    <text x="150" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" fill="#E0F2FE" text-anchor="middle">TYPING SPEED TEST</text>
+    <circle cx="150" cy="130" r="55" fill="#0284C7"/>
+    <text x="150" y="135" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" fill="#FFFFFF" text-anchor="middle">52</text>
+    <text x="150" y="155" font-family="sans-serif" font-weight="bold" font-size="12" fill="#BAE6FD" text-anchor="middle">WPM</text>
+    <rect x="40" y="210" width="100" height="45" rx="6" fill="#0369A1"/>
+    <text x="90" y="230" font-family="sans-serif" font-size="10" fill="#E0F2FE" text-anchor="middle">ACCURACY</text>
+    <text x="90" y="247" font-family="sans-serif" font-weight="bold" font-size="14" fill="#FFFFFF" text-anchor="middle">98.5%</text>
+    <rect x="160" y="210" width="100" height="45" rx="6" fill="#0369A1"/>
+    <text x="210" y="230" font-family="sans-serif" font-size="10" fill="#E0F2FE" text-anchor="middle">LANGUAGE</text>
+    <text x="210" y="247" font-family="sans-serif" font-weight="bold" font-size="13" fill="#FFFFFF" text-anchor="middle">Eng / Guj</text>
+  </g>
+</svg>

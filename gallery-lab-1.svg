@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="gl1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#gl1)"/>
+  <polygon points="0,0 600,0 520,60 80,60" fill="#334155" opacity="0.3"/>
+  <polygon points="0,400 600,400 520,320 80,320" fill="#1E293B"/>
+  <rect x="80" y="60" width="440" height="260" fill="#0F172A"/>
+  <line x1="140" y1="30" x2="460" y2="30" stroke="#38BDF8" stroke-width="4" opacity="0.8"/>
+  <g transform="translate(100, 140)">
+    <rect x="10" y="10" width="80" height="60" rx="4" fill="#38BDF8" opacity="0.9"/>
+    <rect x="15" y="15" width="70" height="50" rx="2" fill="#0284C7"/>
+    <path d="M45 70 L55 70 L58 85 L42 85 Z" fill="#94A3B8"/>
+    <circle cx="50" cy="110" r="18" fill="#475569"/>
+    <path d="M25 150 C25 130 75 130 75 150 Z" fill="#334155"/>
+  </g>
+  <g transform="translate(220, 140)">
+    <rect x="10" y="10" width="80" height="60" rx="4" fill="#818CF8" opacity="0.9"/>
+    <rect x="15" y="15" width="70" height="50" rx="2" fill="#4F46E5"/>
+    <path d="M45 70 L55 70 L58 85 L42 85 Z" fill="#94A3B8"/>
+    <circle cx="50" cy="110" r="18" fill="#475569"/>
+    <path d="M25 150 C25 130 75 130 75 150 Z" fill="#334155"/>
+  </g>
+  <g transform="translate(340, 140)">
+    <rect x="10" y="10" width="80" height="60" rx="4" fill="#34D399" opacity="0.9"/>
+    <rect x="15" y="15" width="70" height="50" rx="2" fill="#059669"/>
+    <path d="M45 70 L55 70 L58 85 L42 85 Z" fill="#94A3B8"/>
+    <circle cx="50" cy="110" r="18" fill="#475569"/>
+    <path d="M25 150 C25 130 75 130 75 150 Z" fill="#334155"/>
+  </g>
+  <rect x="180" y="80" width="240" height="34" rx="6" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="300" y="102" font-family="sans-serif" font-weight="bold" font-size="13" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">HI-TECH COMPUTER LAB</text>
+</svg>

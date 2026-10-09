@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F8FAFC"/>
+  <g transform="translate(100, 80)">
+    <rect width="400" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="0" y="0" width="400" height="50" rx="16" fill="#2563EB"/>
+    <rect x="0" y="35" width="400" height="15" fill="#2563EB"/>
+    <text x="200" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="15" fill="#FFFFFF" text-anchor="middle">1:1 MENTORSHIP &amp; GUIDANCE</text>
+    <circle cx="120" cy="120" r="35" fill="#DBEAFE"/>
+    <text x="120" y="125" font-family="sans-serif" font-weight="bold" font-size="12" fill="#1D4ED8" text-anchor="middle">Trainer</text>
+    <circle cx="280" cy="120" r="35" fill="#EDE9FE"/>
+    <text x="280" y="125" font-family="sans-serif" font-weight="bold" font-size="12" fill="#6D28D9" text-anchor="middle">Student</text>
+    <path d="M160 100 L240 100 L240 130 L200 130 L180 145 L185 130 L160 130 Z" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="200" y="118" font-family="sans-serif" font-size="10" fill="#334155" text-anchor="middle">Step-by-step Help</text>
+    <text x="200" y="195" font-family="sans-serif" font-size="13" fill="#64748B" text-anchor="middle">Dedicated faculty to clear every doubt instantly.</text>
+  </g>
+</svg>

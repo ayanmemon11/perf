@@ -1,0 +1,311 @@
+﻿{
+    "adminAuth":  {
+                      "pinHash":  "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+                      "pinHint":  "Default Demo PIN is 1234. Change it from the Admin Settings."
+                  },
+    "settings":  {
+                     "instituteName":  "Perfect Computer Education",
+                     "tagline":  "Learn Today • Grow Tomorrow",
+                     "phone":  "+91 98765 43210",
+                     "altPhone":  "+91 98765 43211",
+                     "email":  "info@perfectcomputereducation.com",
+                     "whatsappNumber":  "919876543210",
+                     "website":  "https://perfectcomputereducation.com",
+                     "address":  "2nd Floor, Perfect Commercial Complex, Opp. City Central Mall, Station Road, Ahmedabad, Gujarat - 380001",
+                     "openingHours":  "Monday - Saturday: 8:00 AM – 8:00 PM | Sunday: 9:00 AM – 1:00 PM",
+                     "authorizedPerson":  "Director / Center Head",
+                     "certificateTitle":  "Authorized Signatory",
+                     "establishedYear":  "2019"
+                 },
+    "courses":  [
+                    {
+                        "id":  "ccc",
+                        "name":  "CCC",
+                        "fullName":  "Course on Computer Concepts",
+                        "category":  "Basic \u0026 Office",
+                        "duration":  "3 Months",
+                        "fees":  3500,
+                        "description":  "Essential foundation course covering computer fundamentals, operating systems, MS Office (Word, Excel, PowerPoint), internet services, and digital financial literacy.",
+                        "syllabus":  [
+                                         "Introduction to Computer \u0026 Windows OS",
+                                         "MS Word (Documentation \u0026 Formatting)",
+                                         "MS Excel (Spreadsheets \u0026 Basic Formulas)",
+                                         "MS PowerPoint (Presentations)",
+                                         "Internet, Email \u0026 Cyber Security Basics",
+                                         "Digital Financial Tools \u0026 Online Banking"
+                                     ],
+                        "status":  "Active"
+                    },
+                    {
+                        "id":  "tally-prime",
+                        "name":  "TALLY PRIME",
+                        "fullName":  "Tally Prime Professional Accounting",
+                        "category":  "Accounting",
+                        "duration":  "2 Months",
+                        "fees":  4500,
+                        "description":  "Hands-on computerized accounting training with Tally Prime, covering company setup, ledger groups, vouchers, inventory management, and financial reporting.",
+                        "syllabus":  [
+                                         "Accounting Principles \u0026 Golden Rules",
+                                         "Company Creation \u0026 Group Configuration",
+                                         "Voucher Entries (Payment, Receipt, Contra, Journal)",
+                                         "Inventory Management \u0026 Stock Items",
+                                         "Bank Reconciliation Statement (BRS)",
+                                         "Trial Balance, Profit \u0026 Loss, Balance Sheet"
+                                     ],
+                        "status":  "Active"
+                    },
+                    {
+                        "id":  "tally-with-gst",
+                        "name":  "TALLY WITH GST",
+                        "fullName":  "Tally Prime with Practical GST",
+                        "category":  "Accounting",
+                        "duration":  "3 Months",
+                        "fees":  6000,
+                        "description":  "Comprehensive practical GST training in Tally Prime covering CGST, SGST, IGST invoicing, HSN codes, tax computation, E-Way Bill generation, and GST returns preparation.",
+                        "syllabus":  [
+                                         "GST Concepts \u0026 Tax Rates Framework",
+                                         "GST Setup in Tally Prime (Intra \u0026 Inter-State)",
+                                         "GST Tax Invoices, Debit/Credit Notes",
+                                         "HSN / SAC Code Mapping \u0026 Purchase Entries",
+                                         "E-Way Bill \u0026 E-Invoicing Workflows",
+                                         "GSTR-1, GSTR-3B Computation \u0026 Tax Liability"
+                                     ],
+                        "status":  "Active"
+                    },
+                    {
+                        "id":  "full-accounting-course",
+                        "name":  "FULL ACCOUNTING COURSE",
+                        "fullName":  "Master Diploma in Practical Business Accounting",
+                        "category":  "Accounting",
+                        "duration":  "6 Months",
+                        "fees":  9500,
+                        "description":  "All-in-one professional accounting program covering manual accounting concepts, advanced Tally Prime, complete GST returns, TDS, Payroll, and Advanced Excel for accountants.",
+                        "syllabus":  [
+                                         "Financial Accounting Fundamentals \u0026 Journal Entries",
+                                         "Complete Tally Prime Masterclass",
+                                         "Comprehensive GST (Invoicing, RCM, Returns)",
+                                         "TDS (Tax Deducted at Source) \u0026 Challans",
+                                         "Payroll Management \u0026 Employee Pay-slips",
+                                         "Advanced Excel for Financial Reporting \u0026 MIS",
+                                         "Live Business Audit Case Studies \u0026 Final Accounts"
+                                     ],
+                        "status":  "Active"
+                    },
+                    {
+                        "id":  "basic-knowledge-of-computer",
+                        "name":  "BASIC KNOWLEDGE OF COMPUTER",
+                        "fullName":  "Basic Knowledge of Computer for Beginners",
+                        "category":  "Basic",
+                        "duration":  "2 Months",
+                        "fees":  2500,
+                        "description":  "Beginner-friendly step-by-step introduction to operating a computer, managing files, browsing the internet safely, creating emails, and using basic word processing.",
+                        "syllabus":  [
+                                         "Computer Hardware, CPU, Memory \u0026 Storage Basics",
+                                         "Windows Desktop, Files, Folders \u0026 Control Panel",
+                                         "Keyboard Mastery \u0026 English Typing Drills",
+                                         "Internet Browsing, Google Search \u0026 Safety",
+                                         "Email Creation, Attachments \u0026 Drive Storage",
+                                         "Notepad, WordPad \u0026 Basic MS Word Practice"
+                                     ],
+                        "status":  "Active"
+                    },
+                    {
+                        "id":  "all-about-computer",
+                        "name":  "ALL ABOUT COMPUTER",
+                        "fullName":  "All About Computer - Complete Comprehensive Program",
+                        "category":  "Comprehensive",
+                        "duration":  "6–12 Months",
+                        "fees":  12000,
+                        "description":  "Extensive all-round computer proficiency course combining Computer Fundamentals, Advanced MS Office Suite, Internet Tools, Accounting basics, and Design fundamentals.",
+                        "syllabus":  [
+                                         "Computer Architecture \u0026 Operating Systems",
+                                         "Advanced MS Word (Reports \u0026 Mail Merge)",
+                                         "Advanced MS Excel (Formulas, Pivot Tables, Dashboards)",
+                                         "MS PowerPoint (Slide Master \u0026 Visuals)",
+                                         "Tally Prime Accounting Overview",
+                                         "Graphic Design \u0026 Canva Basics",
+                                         "Speed Typing Drills (English/Regional)",
+                                         "Comprehensive Practical Project Work"
+                                     ],
+                        "status":  "Active"
+                    }
+                ],
+    "students":  [
+                     {
+                         "id":  "STU-2026-001",
+                         "fullName":  "Rahul Sharma (DEMO)",
+                         "fatherName":  "Vikram Sharma",
+                         "dob":  "2003-05-14",
+                         "gender":  "Male",
+                         "mobile":  "9876543210",
+                         "email":  "rahul.demo@example.com",
+                         "address":  "12, Shanti Nagar, Station Road, Ahmedabad",
+                         "course":  "TALLY WITH GST",
+                         "admissionDate":  "2026-06-01",
+                         "startDate":  "2026-06-05",
+                         "endDate":  "2026-09-05",
+                         "photo":  "images/avatars/avatar-1.svg",
+                         "status":  "Active",
+                         "totalFees":  6000,
+                         "paidFees":  4000,
+                         "pendingFees":  2000,
+                         "notes":  "Morning 9:00 AM batch. Second installment due on 15th."
+                     },
+                     {
+                         "id":  "STU-2026-002",
+                         "fullName":  "Priya Patel (DEMO)",
+                         "fatherName":  "Hasmukh Patel",
+                         "dob":  "2002-11-20",
+                         "gender":  "Female",
+                         "mobile":  "9876543211",
+                         "email":  "priya.demo@example.com",
+                         "address":  "45, Green Park Society, Paldi, Ahmedabad",
+                         "course":  "FULL ACCOUNTING COURSE",
+                         "admissionDate":  "2026-03-10",
+                         "startDate":  "2026-03-15",
+                         "endDate":  "2026-09-15",
+                         "photo":  "images/avatars/avatar-2.svg",
+                         "status":  "Completed",
+                         "totalFees":  9500,
+                         "paidFees":  9500,
+                         "pendingFees":  0,
+                         "notes":  "Course completed with A+ grade. Certificate issued."
+                     },
+                     {
+                         "id":  "STU-2026-003",
+                         "fullName":  "Amit Solanki (DEMO)",
+                         "fatherName":  "Kishore Solanki",
+                         "dob":  "2004-08-09",
+                         "gender":  "Male",
+                         "mobile":  "9876543212",
+                         "email":  "amit.demo@example.com",
+                         "address":  "8, Surya Complex, Ashram Road, Ahmedabad",
+                         "course":  "CCC",
+                         "admissionDate":  "2026-07-01",
+                         "startDate":  "2026-07-05",
+                         "endDate":  "2026-10-05",
+                         "photo":  "images/avatars/avatar-3.svg",
+                         "status":  "Active",
+                         "totalFees":  3500,
+                         "paidFees":  3500,
+                         "pendingFees":  0,
+                         "notes":  "Evening 6:00 PM batch."
+                     },
+                     {
+                         "id":  "STU-2026-004",
+                         "fullName":  "Neha Joshi (DEMO)",
+                         "fatherName":  "Mahesh Joshi",
+                         "dob":  "2005-02-18",
+                         "gender":  "Female",
+                         "mobile":  "9876543213",
+                         "email":  "neha.demo@example.com",
+                         "address":  "22, Anand Nagar, Satellite, Ahmedabad",
+                         "course":  "BASIC KNOWLEDGE OF COMPUTER",
+                         "admissionDate":  "2026-07-15",
+                         "startDate":  "2026-07-20",
+                         "endDate":  "2026-09-20",
+                         "photo":  "images/avatars/avatar-4.svg",
+                         "status":  "Active",
+                         "totalFees":  2500,
+                         "paidFees":  1500,
+                         "pendingFees":  1000,
+                         "notes":  "Afternoon 3:00 PM batch."
+                     }
+                 ],
+    "payments":  [
+                     {
+                         "receiptNo":  "RCP-2026-1001",
+                         "studentId":  "STU-2026-001",
+                         "studentName":  "Rahul Sharma (DEMO)",
+                         "course":  "TALLY WITH GST",
+                         "amount":  4000,
+                         "paymentDate":  "2026-06-01",
+                         "method":  "UPI",
+                         "notes":  "Admission \u0026 1st Installment"
+                     },
+                     {
+                         "receiptNo":  "RCP-2026-1002",
+                         "studentId":  "STU-2026-002",
+                         "studentName":  "Priya Patel (DEMO)",
+                         "course":  "FULL ACCOUNTING COURSE",
+                         "amount":  5000,
+                         "paymentDate":  "2026-03-10",
+                         "method":  "Cash",
+                         "notes":  "1st Installment"
+                     },
+                     {
+                         "receiptNo":  "RCP-2026-1003",
+                         "studentId":  "STU-2026-002",
+                         "studentName":  "Priya Patel (DEMO)",
+                         "course":  "FULL ACCOUNTING COURSE",
+                         "amount":  4500,
+                         "paymentDate":  "2026-06-10",
+                         "method":  "Bank Transfer",
+                         "notes":  "Final Payment Completed"
+                     },
+                     {
+                         "receiptNo":  "RCP-2026-1004",
+                         "studentId":  "STU-2026-003",
+                         "studentName":  "Amit Solanki (DEMO)",
+                         "course":  "CCC",
+                         "amount":  3500,
+                         "paymentDate":  "2026-07-01",
+                         "method":  "UPI",
+                         "notes":  "Full Course Fees Paid"
+                     },
+                     {
+                         "receiptNo":  "RCP-2026-1005",
+                         "studentId":  "STU-2026-004",
+                         "studentName":  "Neha Joshi (DEMO)",
+                         "course":  "BASIC KNOWLEDGE OF COMPUTER",
+                         "amount":  1500,
+                         "paymentDate":  "2026-07-15",
+                         "method":  "Cash",
+                         "notes":  "Admission Fee"
+                     },
+                     {
+                         "course":  "TALLY PRIME",
+                         "method":  "Cash / UPI",
+                         "amount":  2000,
+                         "receiptNo":  "RCP-2026-1006",
+                         "studentName":  "Test Student Verification",
+                         "notes":  "Admission Initial Fee Payment",
+                         "paymentDate":  "2026-08-31",
+                         "studentId":  "STU-2026-005"
+                     },
+                     {
+                         "notes":  "Balance Cleared",
+                         "studentName":  "Test Student Verification",
+                         "amount":  2500,
+                         "studentId":  "STU-2026-005",
+                         "method":  "UPI",
+                         "course":  "TALLY PRIME",
+                         "paymentDate":  "2026-08-31",
+                         "receiptNo":  "RCP-2026-1007"
+                     }
+                 ],
+    "certificates":  [
+                         {
+                             "certificateNo":  "PCE-2026-101",
+                             "studentId":  "STU-2026-002",
+                             "studentName":  "Priya Patel (DEMO)",
+                             "course":  "FULL ACCOUNTING COURSE",
+                             "issueDate":  "2026-09-20",
+                             "completionDate":  "2026-09-15",
+                             "grade":  "Grade A+",
+                             "status":  "Verified",
+                             "authorizedSignatory":  "Director / Center Head"
+                         },
+                         {
+                             "studentName":  "Test Student Verification",
+                             "completionDate":  "2026-08-31",
+                             "studentId":  "STU-2026-005",
+                             "issueDate":  "2026-08-31",
+                             "course":  "TALLY PRIME",
+                             "grade":  "Grade A",
+                             "certificateNo":  "PCE-2026-102",
+                             "status":  "Verified",
+                             "authorizedSignatory":  "Director / Center Head"
+                         }
+                     ]
+}
